@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/Vermelho"
+        android:gravity="center"
+        android:text="@string/Desc"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/edHostServer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/statusBar"
+        android:layout_alignStart="@id/btnConectar"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/Laranja"
+        android:hint="@string/host"
+        android:inputType="text"
+        android:textColor="@color/Laranja"
+        android:textColorHint="@color/Laranja30" />
+
+    <EditText
+        android:id="@+id/edTopicPublish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edHostServer"
+        android:layout_alignStart="@+id/btnConectar"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/Laranja"
+        android:hint="@string/topic"
+        android:inputType="text"
+        android:textColor="@color/Laranja"
+        android:textColorHint="@color/Laranja30" />
+
+    <Button
+        android:id="@+id/btnConectar"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edTopicPublish"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@color/Laranja"
+        android:text="@string/btnConnectar"
+        android:textColor="@color/Preto"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/edMensagemSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnSend"
+        android:layout_alignStart="@id/btnConectar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/Laranja"
+        android:hint="@string/mensagemSend"
+        android:inputType="text"
+        android:textColor="@color/Laranja"
+        android:textColorHint="@color/Laranja30" />
+
+
+    <Button
+        android:id="@+id/btnSend"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@color/Laranja"
+        android:text="@string/btnSend"
+        android:textColor="@color/Preto"
+        android:textSize="12sp" />
+
+</RelativeLayout>

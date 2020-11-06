@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MQTTPublisher</string>
+    <string name="host">Insira o HostServer</string>
+    <string name="Desc">Desconectado</string>
+    <string name="topic">Insira o Topic</string>
+    <string name="btnConnectar">Conectar</string>
+    <string name="btnSend">Enviar</string>
+    <string name="mensagemSend">Insira a mensagem a ser enviada</string>
+
+</resources>
